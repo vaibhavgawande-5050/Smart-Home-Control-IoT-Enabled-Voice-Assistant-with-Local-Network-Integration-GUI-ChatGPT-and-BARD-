@@ -275,7 +275,7 @@ from PIL import Image, ImageTk  # Import Pillow library for PNG image handling
 
 root = tk.Tk()
 root.title("Vihaan: A Voice-Assistant")
-root.iconbitmap(r'modules\vihaan.ico')
+root.iconbitmap(r'images\vihaan.ico')
 root.configure(highlightbackground="black", highlightthickness=5)
 # Set window size to full screen
 window_width = root.winfo_screenwidth()
@@ -283,7 +283,7 @@ window_height = root.winfo_screenheight()
 root.geometry(f"{window_width}x{window_height}+0+0")
 # Background Image
 # bg_image = PhotoImage(file=r"modules\output.gif")
-bg_image = PhotoImage(file=r"C:\Users\vaibh\OneDrive\Desktop\images\background.gif")
+bg_image = PhotoImage(file=r"images\background.gif")
 bg_label = tk.Label(root, image=bg_image)
 bg_label.place(relwidth=1, relheight=1)
 
@@ -301,7 +301,7 @@ y = 10
 label.place(x=x, y=y)
 
 # Mic Button
-mic_image = PhotoImage(file=r"C:\Users\vaibh\OneDrive\Desktop\images\mic.gif")
+mic_image = PhotoImage(file=r"images\mic.gif")
 listening = False
 
 # def start_voice_assistant():
@@ -447,7 +447,7 @@ output_text = Text(root, bg="black", fg="white", font=("Arial", 14), wrap="word"
 output_text.place(relx=0.32, rely=0.62, relwidth=0.65, relheight=0.32)
 
 
-exit_image = Image.open(r"C:\Users\vaibh\OneDrive\Desktop\images\EXITupdated.gif")
+exit_image = Image.open(r"images\EXITupdated.gif")
 exit_image = exit_image.resize((120, 70), Image.LANCZOS)
 exit_image = ImageTk.PhotoImage(exit_image)
 
@@ -458,7 +458,7 @@ exit_button = Button(root, image=exit_image, command=exit_program, borderwidth=0
 exit_button.place(relx=0.93, rely=0.125, anchor="center")
 
 # Stop Button (Same Size as Exit Button)
-stop_image = Image.open(r"C:\Users\vaibh\OneDrive\Desktop\images\stopupdated1.gif")
+stop_image = Image.open(r"images\stopupdated1.gif")
 stop_image = stop_image.resize((120, 70), Image.LANCZOS)
 stop_image = ImageTk.PhotoImage(stop_image)
 
@@ -471,7 +471,7 @@ stop_button = Button(root, image=stop_image, command=stop_listening, borderwidth
 stop_button.place(relx=0.93, rely=0.275, anchor="center")
 
 # Clear Button
-clear_image = Image.open(r"C:\Users\vaibh\OneDrive\Desktop\images\clearupdated.gif")  # Replace with the actual image for the clear button
+clear_image = Image.open(r"images\clearupdated.gif")  # Replace with the actual image for the clear button
 clear_image = clear_image.resize((120, 70), Image.LANCZOS)
 clear_image = ImageTk.PhotoImage(clear_image)
 
